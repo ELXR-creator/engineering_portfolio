@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Task Creator</title>
+</head>
+<body>
+
+    <h2>Create Task</h2>
+
+    <form id="taskForm">
+        <label>
+            Name:
+            <input type="text" id="name" required />
+        </label>
+        <br><br>
+
+        <label>
+            Description:
+            <input type="text" id="description" />
+        </label>
+        <br><br>
+
+        <label>
+            Status:
+            <select id="status">
+                <option value="TODO">TODO</option>
+                <option value="IN_PROGRESS">IN_PROGRESS</option>
+                <option value="DONE">DONE</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>
+            Priority:
+            <select id="priority">
+                <option value="IMMEDIATE">IMMEDIATE</option>
+                <option value="TODAY">TODAY</option>
+                <option value="SOON">SOON</option>
+                <option value="SCHEDULED">SCHEDULED</option>
+                <option value="SOMEDAY">SOMEDAY</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>
+            Severity:
+            <select id="severity">
+                <option value="LIFE_CRITICAL">LIFE_CRITICAL</option>
+                <option value="IDENTITY_LEVEL">IDENTITY_LEVEL</option>
+                <option value="GROWTH_IMPACT">GROWTH_IMPACT</option>
+                <option value="MAINTENANCE">MAINTENANCE</option>
+                <option value="OPTIONAL">OPTIONAL</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>
+            Time Given (minutes):
+            <input type="number" id="time_given" min="1" />
+        </label>
+        <br><br>
+
+        <button type="submit">Create Task</button>
+    </form>
+
+    <pre id="response"></pre>
+
+    <!-- ✅ Correct script import -->
+    <script src="script.js"></script>
+</body>
+</html>
